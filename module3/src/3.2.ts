@@ -1,7 +1,7 @@
 {
     // Inheritance:
 
-    class Parent {
+    class Person {
         name: String;
         age: number;
         addres: String;
@@ -20,12 +20,12 @@
 
 
 
-    class Student extends Parent {
+    class Student extends Person {
         constructor(name: string, age: number, addres: string) { super(name, age, addres) }
 
     };
     const Student1 = new Student("Rabeya", 20, "dhaka");
-    class Teacher extends Parent {
+    class Teacher extends Person {
         designation: String
         constructor(name: string, age: number, addres: string, designation: string) {
             super(name, age, addres);
